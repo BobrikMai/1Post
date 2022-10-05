@@ -1,0 +1,8 @@
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/DATABASE/main/DATABASE.txt", true))()
+ 
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+  print("123")
+else
+  game:service('Players').LocalPlayer:Kick('Bruh')
+end
+ 
